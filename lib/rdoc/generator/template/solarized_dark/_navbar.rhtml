@@ -1,0 +1,27 @@
+<header role="banner" id="rdoc-header">
+  <div id="rdoc-header-left">
+    <%- if(rel_prefix == "") then -%>
+    <h2><a href="<%= rel_prefix %>/index.html">Home</a></h2>
+    <%- else -%>
+    <h2><a href="/index.html">Home</a></h2>
+    <h2><a href="<%= rel_prefix %>/index.html">RDoc Home</a></h2>
+    <%- end -%>
+    <h3><a href="<%= rel_prefix %>/table_of_contents.html#pages">Pages</a></h3>
+    <h3><a href="<%= rel_prefix %>/table_of_contents.html#classes">Classes</a></h3>
+    <h3><a href="<%= rel_prefix %>/table_of_contents.html#methods">Methods</a></h3>
+  </div>
+  <div id="rdoc-header-right">
+    <form id="rdoc-search" action="#" method="get" accept-charset="utf-8">
+      <input id="rdoc-search-field" role="combobox" aria-label="Search"
+        aria-autocomplete="list" aria-controls="rdoc-search-results"
+        type="text" name="rdoc-search-field" placeholder="Search" spellcheck="false">
+    </form>
+  </div>
+</header>
+<div id="rdoc-search-results-background" class="hidden">
+  <div id="rdoc-search-results-wrapper">
+    <ul id="rdoc-search-results" aria-label="Search Results"
+    aria-busy="false" aria-expanded="false" aria-aria-atomic="false">
+  </ul>
+</div>
+</div>
